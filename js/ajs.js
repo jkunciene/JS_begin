@@ -31,6 +31,41 @@ console.log(vardai);
 vardai.splice(1,1);
 console.log(vardai);
 
+//sukurti masyva is 10 elementu, pasalinti 6 ir po jo prideti du naujus
+
+let masyvas='ieva, karolis, jonas, algirdas, jonas, zita, kestas, ona, lina, antanas';
+masyvas = masyvas.split(',');
+console.log(masyvas);
+
+masyvas.splice(5, 1, "idejau", "darviena");
+console.log(masyvas);
+
+let vidurkis = 8;
+let lankomumas = 6;
+
+/*if(vidurkis == 10){
+	console.log("puikus");}
+	else if(vidurkis == 8){
+		console.log('gerai varai');
+	}
+	else if(vidurkis>=5 && lankomumas >= 6){
+		console.log("laikykis, pratemsi")
+	}
+		else{
+			console.log("pasistenk");
+		}*/
+
+switch (vidurkis){
+	case 8:
+	console.log("geras");
+	break;
+	case 6:
+	console.log("vidutinis");
+	break;
+	default:
+	console.log("ar moketes?");
+
+}
 
 
 
