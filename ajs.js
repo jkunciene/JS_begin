@@ -1,82 +1,72 @@
-let knygos = [
-grozine:[
-{
-			ISBN: 1234,
-			LeidimoMetai: 1983,
-			Pavadinimas: 'trys parsiukai',
-			PuslapiuSkaicius: 235
-},
-{
-			ISBN: 15489,
-			LeidimoMetai: 1983,
-			Pavadinimas: 'rozes',
-			PuslapiuSkaicius: 25
-},
-{
-			ISBN: 1673,
-			LeidimoMetai: 2019,
-			Pavadinimas: 'viskas bus gerai',
-			PuslapiuSkaicius: 763
-}
-],
-moksline:[
-{
-			ISBN: 56746,
-			LeidimoMetai: 2011,
-			Pavadinimas: 'angelai',
-			PuslapiuSkaicius: 167
-},
-{
-			ISBN: 4679,
-			LeidimoMetai: 1983,
-			Pavadinimas: 'myliu js',
-			PuslapiuSkaicius: 607
-},
-{
-			ISBN:4444,
-			LeidimoMetai:2004,
-			Pavadinimas:'pamokos',
-			PuslapiuSkaicius:123
-}
-],
-fantastika:[
-{
-			ISBN: 14697,
-			LeidimoMetai: 2003,
-			Pavadinimas: 'ana ir karalius',
-			PuslapiuSkaicius: 631
-},
-{
-			ISBN: 15489,
-			LeidimoMetai: 1983,
-			Pavadinimas: 'parsiukai',
-			PuslapiuSkaicius: 235
-},
-{
-			ISBN: 364,
-			LeidimoMetai: 2010,
-			Pavadinimas: 'gerai',
-			PuslapiuSkaicius: 89
-},
-{
-			ISBN: 8976,
-			LeidimoMetai: 2012,
-			Pavadinimas: 'tuoj tuoj',
-			PuslapiuSkaicius: 648
-},
-{
-			ISBN: 62176,
-			LeidimoMetai: 2000,
-			Pavadinimas: 'marsieciai',
-			PuslapiuSkaicius: 469
-},
-{
-			ISBN: 267982,
-			LeidimoMetai: 1995,
-			Pavadinimas: 'nuostabioji karta',
-			PuslapiuSkaicius: 359
+var vardas = 'Bilas';
+console.log(vardas.length); 
+var vardas = 'Bilas';
+console.log(vardas[3]);
+console.log(vardas.indexOf("las")); 
+console.log(vardas.slice(0,2));
+
+console.log(vardas.toLowerCase());
+console.log(vardas.toUpperCase());
+
+var pakeistasVardas = vardas.replace("Bi","Gi");
+console.log(pakeistasVardas);
+
+var duomenys = 'Kaunas,Vilnius,Alytus,Klaipeda';
+var duomenuMasyvas = duomenys.split(',');
+console.log(duomenuMasyvas);
+var stringas = duomenuMasyvas.join(',');
+console.log(stringas);
+
+let vardai='ieva, karolis, jonas';
+vardai = vardai.split(',');
+console.log(vardai);
+//prideti nauja i gala
+vardai.push('Andrius');
+console.log(vardai);
+vardai.pop();
+vardai.shift();
+console.log(vardai);
+vardai.unshift('tadukas');
+console.log(vardai);
+vardai.splice(1,1);
+console.log(vardai);
+
+//sukurti masyva is 10 elementu, pasalinti 6 ir po jo prideti du naujus
+
+let masyvas='ieva, karolis, jonas, algirdas, jonas, zita, kestas, ona, lina, antanas';
+masyvas = masyvas.split(',');
+console.log(masyvas);
+
+masyvas.splice(5, 1, "idejau", "darviena");
+console.log(masyvas);
+
+let vidurkis = 8;
+let lankomumas = 6;
+
+/*if(vidurkis == 10){
+	console.log("puikus");}
+	else if(vidurkis == 8){
+		console.log('gerai varai');
+	}
+	else if(vidurkis>=5 && lankomumas >= 6){
+		console.log("laikykis, pratemsi")
+	}
+		else{
+			console.log("pasistenk");
+		}*/
+
+switch (vidurkis){
+	case 8:
+	console.log("geras");
+	break;
+	case 6:
+	console.log("vidutinis");
+	break;
+	default:
+	console.log("ar moketes?");
+
 }
 
-]
 
-]
+
+
