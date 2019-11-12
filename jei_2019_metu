@@ -1,0 +1,57 @@
+let knygos = {
+    grozine:[
+    {
+                ISBN: 1234,
+                LeidimoMetai: 1983,
+                Pavadinimas: 'trys parsiukai',
+                PuslapiuSkaicius: 235
+    },
+    {
+                ISBN: 15489,
+                LeidimoMetai: 1983,
+                Pavadinimas: 'rozes',
+                PuslapiuSkaicius: 25
+    },
+    {
+                ISBN: 1673,
+                LeidimoMetai: 2019,
+                Pavadinimas: 'viskas bus gerai',
+                PuslapiuSkaicius: 763
+    }
+    ] ,
+
+    moksline:[
+    {
+                ISBN: 56746,
+                LeidimoMetai: 2011,
+                Pavadinimas: 'angelai',
+                PuslapiuSkaicius: 167
+    },
+    {
+                ISBN: 4679,
+                LeidimoMetai: 1983,
+                Pavadinimas: 'myliu js',
+                PuslapiuSkaicius: 607
+    },
+    {
+                ISBN:4444,
+                LeidimoMetai:2004,
+                Pavadinimas:'pamokos',
+                PuslapiuSkaicius:123
+    }
+    ]
+    }
+
+for (let kategorija in knygos){  
+        //console.log(kat);  
+    for (let i = 0; i<knygos[kategorija].length; i++){ //priejom prie katagoriju
+                                    //(masyve knygos esancio objekto propercio)
+         if(knygos[kategorija][i]['LeidimoMetai']==2019){
+
+            console.log("Kategorija: "+ kategorija + knygos[kategorija].length);
+            for (let savybe in knygos[kategorija][i]){
+                console.log(savybe+knygos[kategorija][i][savybe]);
+            }
+         } 
+         }
+         }   
